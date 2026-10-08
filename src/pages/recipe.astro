@@ -1,28 +1,28 @@
 ---
-const title = 'Recipe Site';
+const title = "Recipe Site";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content="A collection of delicious recipes." />
-		<title>{title}</title>
-	</head>
-	<body>
-		<header>
-			<nav aria-label="Main navigation">
-				<a href="/">{title}</a>
-			</nav>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="A collection of delicious recipes." />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main navigation">
+        <a href="/">{title}</a>
+      </nav>
+    </header>
 
-		<main>
-			<slot />
-		</main>
+    <main>
+      <slot />
+    </main>
 
-		<footer>
-			<p>&copy; {new Date().getFullYear()} {title}</p>
-		</footer>
-	</body>
+    <footer>
+      <p>&copy; {new Date().getFullYear()} {title}</p>
+    </footer>
+  </body>
 </html>
