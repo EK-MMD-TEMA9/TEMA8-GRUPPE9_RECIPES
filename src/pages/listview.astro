@@ -1,30 +1,7 @@
 ---
-const title = "List View";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="List view" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
-  </head>
-  <body>
-    <header>
-      <nav aria-label="Main navigation">
-        <a href="/">Home</a>
-      </nav>
-    </header>
-
-    <main>
-      <h1>{title}</h1>
-      <slot />
-    </main>
-
-    <footer>
-      <p>&copy; {new Date().getFullYear()}</p>
-    </footer>
-  </body>
-</html>
+<Layout title="list view">
+  <h1>List View</h1>
+</Layout>

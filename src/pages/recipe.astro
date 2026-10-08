@@ -1,28 +1,7 @@
 ---
-const title = "Recipe Site";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="A collection of delicious recipes." />
-    <title>{title}</title>
-  </head>
-  <body>
-    <header>
-      <nav aria-label="Main navigation">
-        <a href="/">{title}</a>
-      </nav>
-    </header>
-
-    <main>
-      <slot />
-    </main>
-
-    <footer>
-      <p>&copy; {new Date().getFullYear()} {title}</p>
-    </footer>
-  </body>
-</html>
+<Layout title="recipe">
+  <h1>Recipe</h1>
+</Layout>
